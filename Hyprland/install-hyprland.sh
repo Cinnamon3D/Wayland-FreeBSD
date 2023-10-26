@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Installing wayland and needed packages..."
-sudo pkg install wayland seatd socket wlroots drm-510-kmod drm-kmod elogind
+sudo pkg install hyprland wayland firefox seatd socket wlroots drm-510-kmod drm-kmod elogind nwg-look swaybg 
 sudo pkg install python py39-ranger btop neofetch micro
 
 echo "Enabling Services..."
@@ -19,4 +19,4 @@ sudo sysrc dbus_enable="YES"
 
 sudo pw groupmod video -m cinnamon
 
-#Still need to add all packages to install, UI configs, and Wifi drivers, to the script
+#Still need to add all packages to install, UI configs, Wifi drivers, and bluetooth, to the script
