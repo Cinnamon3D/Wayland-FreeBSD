@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Installing wayland and needed packages..."
-sudo pkg install hyprland wayland firefox seatd socket wlroots drm-510-kmod drm-kmod elogind nwg-look swaybg 
+sudo pkg install hyprland wayland firefox seatd socket wlroots drm-510-kmod drm-kmod elogind nwg-look swaybg xdg-desktop-portal-hyprland
 sudo pkg install python py39-ranger btop neofetch micro
 
 echo "Enabling Services..."
@@ -27,4 +27,4 @@ mv "kitty.conf" "/$HOME/.config/kitty"
 mkdir -p "$HOME/.config/dunst"
 mv "dunstrc" "/$HOMW/.config/dunst"
 
-#Still need to add all packages to install, UI configs, Wifi drivers, and bluetooth, to the script
+#Still need to add all packages to install, UI configs, polkit, Wifi drivers, network selector, and bluetooth, to the script
