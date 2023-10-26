@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo "Installing wayland and needed packages..."
-sudo pkg install hyprland wayland firefox seatd socket wlroots drm-510-kmod drm-kmod elogind nwg-look swaybg xdg-desktop-portal-hyprland
+sudo pkg install hyprland wayland firefox seatd socket wlroots drm-510-kmod drm-kmod elogind nwg-look swaybg xdg-desktop-portal-hyprland calcurse
 sudo pkg install python py39-ranger btop neofetch micro
 
 echo "Enabling Services..."
