@@ -1,0 +1,3 @@
+# Sign into root account and insall pkg and sudo with ("pkg install sudo") add user to the sudo group with ("visudo") type ("username ALL=(ALL:ALL) ALL")
+# Sign into user account and install git and bash with ("sudo pkg install git bash") the clone this repo with ("git clone https://github.com/SimeonBlack/Hyprland-Config")
+# Make script excicutible with ("chmod +x" freebsd-install.sh") then run the script with ("bash ./freebsd-install.sh")
