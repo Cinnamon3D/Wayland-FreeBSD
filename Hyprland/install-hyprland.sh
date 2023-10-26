@@ -19,9 +19,12 @@ sudo sysrc dbus_enable="YES"
 
 sudo pw groupmod video -m cinnamon
 
-mv hyprland.conf /$HOME/.config/hypr/
-mv Wallpaper.jpg /$HOME/.config/hypr/
-mv kitty.conf /$HOME/.config/kitty
-mv dunstrc /$HOME/.config/dunst
+mkdir -p "$HOME/.config/hypr"
+mv "hyprland.conf" "/$HOME/.config/hypr/"
+mv "Wallpaper.jpg" "/$HOME/.config/hypr/"
+mkdir -p "$HOME/.config/kitty"
+mv "kitty.conf" "/$HOME/.config/kitty"
+mkdir -p "$HOME/.config/dunst"
+mv "dunstrc" "/$HOMW/.config/dunst"
 
 #Still need to add all packages to install, UI configs, Wifi drivers, and bluetooth, to the script
