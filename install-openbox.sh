@@ -1,3 +1,4 @@
+#!/bin/sh
 #Install main GUI programs
 sudo pkg install openbox xorg rofi lxappearance polybar alacritty thunar nitrogen  drm-kmod drm-510-kmod
 sudo pkg install neofetch btop micro py39-ranger python
