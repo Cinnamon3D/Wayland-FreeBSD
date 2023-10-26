@@ -1,0 +1,4 @@
+xinput set-prop 11 327 1 &
+xinput set-prop 11 307 1 &
+nitrogen --restore &
+polybar
