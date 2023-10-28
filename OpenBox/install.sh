@@ -23,6 +23,8 @@ echo "exec openbox-session" >> ~/.xinitrc
 
 sudo sysrc kld_list+=i915kms
 
+sudo kldload i915kms
+
 sudo sysrc dbus_enable="YES"
 
 sudo pw groupmod video -m cinnamon
