@@ -16,6 +16,8 @@ sudo echo "kld_list="drm-510-kmod"" >> /etc/rc.conf
 
 sudo sysrc kld_list+=i915kms
 
+sudo kld load i915
+
 sudo sysrc dbus_enable="YES"
 
 sudo pw groupmod video -m cinnamon
