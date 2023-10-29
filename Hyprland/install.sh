@@ -1,9 +1,9 @@
 #!/bin/sh
 
 echo "Installing wayland and needed packages..."
-sudo pkg install hyprland wayland firefox seatd socket wlroots drm-510-kmod drm-kmod elogind nwg-look swaybg xdg-desktop-portal-hyprland calcurse
-sudo pkg install python py39-ranger btop neofetch micro
-sudo pkg install wlsunset mako kanshi wlogout swayidle
+sudo pkg install hyprland wayland  xdg-desktop-portal-hyprland wofi kitty firefox nwg-look swaybg 
+sudo pkg install python py39-ranger btop neofetch micro calcurse
+sudo pkg install wlsunset mako kanshi wlogout swayidle seatd socket wlroots drm-510-kmod drm-kmod
 
 echo "Enabling Services..."
 export XDG_RUNTIME_DIR=/var/run/user/`id -u`
