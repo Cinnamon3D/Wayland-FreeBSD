@@ -7,8 +7,8 @@ sudo pkg install wlsunset mako kanshi wlogout swayidle
 
 echo "Enabling Services..."
 export XDG_RUNTIME_DIR=/var/run/user/`id -u`
-echo "export XDG_RUNTIME_DIR=/var/run/user/`id -u`" >> ~/.shrc
-echo "sudo service seatd start" >> ~/.shrc
+echo "export XDG_RUNTIME_DIR=/tmp" >> ~/.shrc
+echo "sudo service seatd onestart" >> ~/.shrc
 sudo pw groupmod video -m cinnamon
 sudo echo "kld_list="drm-510-kmod"" >> /etc/rc.conf
 
