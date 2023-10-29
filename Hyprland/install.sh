@@ -1,14 +1,14 @@
 #!/bin/sh
 
 echo "Installing wayland and needed packages..."
-sudo pkg install hyprland wayland  xdg-desktop-portal-hyprland wofi kitty firefox nwg-look swaybg 
+sudo pkg install hyprland wayland xdg-desktop-portal-hyprland wofi kitty firefox nwg-look swaybg 
 sudo pkg install python py39-ranger btop neofetch micro calcurse
 sudo pkg install wlsunset mako kanshi wlogout swayidle seatd socket wlroots drm-510-kmod drm-kmod
 
 echo "Enabling Services..."
 export XDG_RUNTIME_DIR=/var/run/user/`id -u`
 echo "export XDG_RUNTIME_DIR=/tmp" >> ~/.shrc
-echo "sudo service seatd onestart" >> ~/.shrc
+#echo "sudo service seatd onestart" >> ~/.shrc
 sudo pw groupmod video -m cinnamon
 sudo echo "kld_list="drm-510-kmod"" >> /etc/rc.conf
 
@@ -26,24 +26,6 @@ mv "Wallpaper.jpg" "/$HOME/.config/hypr/"
 mkdir -p "$HOME/.config/kitty"
 mv "kitty.conf" "/$HOME/.config/kitty"
 mkdir -p "$HOME/.config/dunst"
-mv "dunstrc" "/$HOMW/.config/dunst"
+mv "dunstrc" "/$HOME/.config/dunst"
 
 #Still need to add all packages to install, UI configs, polkit, Wifi drivers, network selector, and bluetooth, to the script
-
-#Unsure about these commands
-
-#export MOZ_ENABLE_WAYLAND=1
-#export XDG_SESSION_TYPE=wayland
-#export XDG_RUNTIME_DIR=/tmp/$USER/.xdg
-#export CLUTTER_BACKEND=wayland
-#export SDL_VIDEODRIVER=wayland
-#export LIBGL_DRI3_ENABLE=1
-#export GDK_BACKEND=wayland
-#export XKB_DEFAULT_RULES=evdev
-#export QT_QPA_PLATFORM=wayland-egl
-#export QT_WAYLAND_DISABLE_WINDOWDECORATION=1
-#export BEMENU_BACKEND=wayland
-#export WLR_DRM_NO_ATOMIC=1
-#export XCURSOR_THEME=whiteglass
-#[ -d $XDG_RUNTIME_DIR ] || mkdir -m 700 -p $XDG_RUNTIME_DIR
-#exec ck-launch-session dbus-launch --sh-syntax --exit-with-session Hyprland
