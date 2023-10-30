@@ -1,3 +1,3 @@
 Sign into root account and insall pkg and sudo with ("pkg install sudo") add user to the sudo group with ("visudo") type ("username ALL=(ALL:ALL) ALL")
-Sign into user account and install git with ("sudo pkg install git") the clone this repo with ("git clone https://github.com/SimeonBlack/FreeBSD-Install")
+Sign into user account and install git with ("sudo pkg install git") the clone this repo with ("git clone https://github.com/SimeonBlack/Wayland-FreeBSD")
 Make script excicutible with ("chmod +x" Fallowed by the .sh script) then run the script with ("bash ./" Fallowed by the .sh script)
