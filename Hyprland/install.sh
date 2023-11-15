@@ -6,9 +6,10 @@ sudo pkg install python py39-ranger btop neofetch micro calcurse wifimgr
 sudo pkg install wlsunset mako kanshi wlogout swayidle seatd socket wlroots drm-510-kmod drm-kmod
 
 echo "Enabling Services..."
-export XDG_RUNTIME_DIR=/var/run/user/`id -u`
+export XDG_RUNTIME_DIR=/tmp
 echo "export XDG_RUNTIME_DIR=/tmp" >> ~/.shrc
 #echo "sudo service seatd onestart" >> ~/.shrc
+echo "sudo service seatd onestart" >> /etc/rc.local
 sudo pw groupmod video -m cinnamon
 sudo echo "kld_list="drm-510-kmod"" >> /etc/rc.conf
 
