@@ -7,10 +7,13 @@ sudo pkg install wlsunset mako kanshi wlogout swayidle seatd socket wlroots drm-
 
 echo "Enabling Services..."
 export XDG_RUNTIME_DIR=/tmp
-echo "export XDG_RUNTIME_DIR=/tmp" >> ~/.shrc
+#echo "export XDG_RUNTIME_DIR=/tmp" >> ~/.shrc
+sudo echo "export XDG_RUNTIME_DIR=/tmp" >> /etc/rc.local
 #echo "sudo service seatd onestart" >> ~/.shrc
-echo "sudo service seatd onestart" >> /etc/rc.local
+sudo echo "sudo service seatd onestart" >> /etc/rc.local
+
 sudo pw groupmod video -m cinnamon
+
 sudo echo "kld_list="drm-510-kmod"" >> /etc/rc.conf
 
 sudo sysrc kld_list+=i915kms
