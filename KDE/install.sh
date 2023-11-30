@@ -1,6 +1,6 @@
 #!/bin/sh
 
-sudo pkg install plasma5-plasma konsole firefox drm-kmod sddm kate dolphin python btop neofetch micro wifimgr
+sudo pkg install plasma5-plasma konsole firefox drm-kmod sddm kate dolphin btop neofetch micro
 sudo pkg remove plasma5-discover
 
 sudo pw groupmod video -m cinnamon
