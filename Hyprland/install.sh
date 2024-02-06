@@ -31,5 +31,7 @@ mkdir -p "$HOME/.config/kitty"
 mv "kitty.conf" "/$HOME/.config/kitty"
 mkdir -p "$HOME/.config/dunst"
 mv "dunstrc" "/$HOME/.config/dunst"
+mv ".startup.sh" "/$HOME/"
+
 
 #Still need to add all packages to install, UI configs, polkit, Wifi drivers, network selector, and bluetooth, to the script
